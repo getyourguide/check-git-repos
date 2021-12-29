@@ -7,6 +7,8 @@ need to be upstreamed.
 ## Usage
 
 ```
+pipx install check_git_repos
+
 usage: check_git_repos [-h] [--include-hidden] [path]
 
 Check the status of git repositories in a directory
