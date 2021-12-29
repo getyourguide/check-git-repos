@@ -1,11 +1,12 @@
-# check_git_repos
+# check-git-repos
+[![PyPI version](https://badge.fury.io/py/check-git-repos.svg)](https://badge.fury.io/py/check-git-repos)
 
 A simple utility script to check git repos contained underneath a given directory, reporting if any of the repos contain changes that
 need to be upstreamed.
 
 ## Usage
 
-```bash
+```
 usage: check_git_repos [-h] [--include-hidden] [path]
 
 Check the status of git repositories in a directory
