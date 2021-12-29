@@ -1,0 +1,31 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "check_git_repos"
+version = "1.0.0"
+description = "A command line interface to check git repositories within a directory"
+
+authors = [
+  "Ben Ryves <bryves@gmail.com>"
+]
+
+readme = 'README.md'
+repository = 'https://github.com/getyourguide/check-git-repos'
+homepage = 'https://github.com/getyourguide/check-git-repos'
+
+keywords = ['maintenance', 'tooling', 'git', 'cli']
+
+[tool.poetry.scripts]
+check_git_repos = 'check_git_repos:main'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+GitPython = "^3.1.24"
+
+[tool.poetry.dev-dependencies]
+black = "21.11b1"
+
+[tool.black]
+line-length = 120
